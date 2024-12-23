@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+
+        <h2>Contact Information</h2>
+
+        <!-- Contact information starts -->
+        <fieldset>
+
+            <legend>Contact Information</legend>
+            <p>
+                Name: <input type="text" placeholder="First Name" name="First Name">
+                <input type="text" placeholder="Last Name" name="Last Name">
+            </p>
+
+            <p>
+                Gender: Male <input type="radio" name="Gender">
+                Female <input type="radio" name="Gender" required>
+            </p>
+
+            <p>
+                Age: <input type="number" name="Age" min="0" max="" required>
+            </p>
+
+            <p>
+                Address: <textarea name="address" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                Email <input type="email" required>
+            </p>
+
+            <p>
+                Mobile No: <input type="number" name="Mobile No">
+            </p>
+
+        </fieldset>
+        <!-- Contact information ends -->
+
+        <!-- Contact information starts -->
+        <fieldset>
+
+            <legend>Payment Information</legend>
+
+            <p>Card Name:
+                <select name="Card Name" required>
+                    <option value="#" hidden>Select</option>
+                    <option value="Visa">Visa</option>
+                    <option value="RuPay">RuPay</option>
+                    <option value="Master">Master</option>
+                </select>
+            </p>
+            <p>
+                Card Number: <input type="number">
+            </p>
+            <p>
+                CVV: <input type="password">
+            </p>
+            <p>
+                Expiry Date: <input type="date">
+            </p>
+        </fieldset>
+        <!-- Contact information ends -->
+        
+        <button type="reset">Reset</button>
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+
+</html>
